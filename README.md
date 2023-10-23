@@ -50,7 +50,7 @@ This will make the later part of this assignment easier for you.
   - [X] To store rd data into memory, it has to be connected to the write port of DMEM
   - [X] Provide appropriate control signal to correctly enable DMEM memory write for store instruction
   - [X] Modify the control circuit to generate the control signal, and the main circuit to use the modified control circuit
-- [ ] Test
+- [X] Test
   - [X] Store some data to DMEM using the store instruction and see the contents of DMEM to check if it is there
   - [X] Load data from the same location into a register (choose form among the first 5 registers in regfile)  
         *Checking register values: Under the 'Simulate' menu you will find "Timing diagram". Open that and click on the 'Add or remove signals' button. Expand "REGFILE" and select r1...r5 (whichever register you stored to). Now when you simulate, you can directly see the value of the registers at each time step.
@@ -62,7 +62,7 @@ This will make the later part of this assignment easier for you.
   - [X] Add the corresponding control signal
   - [X] Take the ALU output and put it back into PC through a Mux
   - [X] Add the correct control signal depending on the Flags register to choose the correct input to PC
-- [ ] Test
+- [X] Test
   - [X] Load some value to two registers
   - [X] Run the compare instruction to compare them and save the result in the Flags register
   - [X] Run the branch instruction to make the PC jump to a positive and negative offset
@@ -78,11 +78,11 @@ This will make the later part of this assignment easier for you.
   - [X] Check data memory for the correct result, and also verify that the PC behaves correctly through the call and return instructions
   - [X] **Commit and push to Github with message "call and ret instructions"**
 3. Add support for _nop_ and _halt_ instructions
-- [ ] Do you need any hardware modification?
-- [ ] Modify the control signals appropriately for _nop_
-- [ ] With the _halt_ instruction, the _PC_ stops incrementing. Do you need hardware modification?
-- [ ] Add appropriate control signals
-- [ ] **Commit and push to Github with message "halt and nop instruction"**
+- [X] Do you need any hardware modification?
+- [X] Modify the control signals appropriately for _nop_
+- [X] With the _halt_ instruction, the _PC_ stops incrementing. Do you need hardware modification?
+- [X] Add appropriate control signals
+- [X] **Commit and push to Github with message "halt and nop instruction"**
 - [ ] Write a small test program for all your instructions:
   - [ ] Load two numbers into r1 and r2
   - [ ] Add the two numbers and store result in r3
