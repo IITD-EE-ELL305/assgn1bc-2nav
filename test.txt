@@ -27,3 +27,17 @@ r5 - cmp r5 r1 r2
 r6 - addu r5 r1 ffff
 0000 0101 0100 0101 f f f f
 0 5 4 5 f f f f
+
+-----------------------------------------------------------
+Testing load store instructions 
+
+
+r1 - 1, add r1 r1 1
+0000 0000 0000 0000 0100 0100 0110 0000 - imm rs1 rd i opcode
+60 44 00 00 - works, original convention was much better
+st r1 r2 0
+0000 0000 0000 0000 0000 1000 0110 1111 - imm rs1 rd i opcode
+6e 08 00 00
+ld r2 r2 0
+0000 0000 0000 0000 0000 1000 1010 1110 - imm rs1 rd i opcode
+ad 08 00 00

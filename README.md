@@ -46,15 +46,15 @@ This will make the later part of this assignment easier for you.
   - [X] You want to write back the data from that address, so you will have to add a Mux with ALU and DMEM_R_data as inputs and add an appropriate control signal to choose which one to write back
   - [X] Appropriately modify the writeback path
   - [X] **Commit and push to Github with message "load instruction"**
-- [ ] store
-  - [ ] To store rd data into memory, it has to be connected to the write port of DMEM
-  - [ ] Provide appropriate control signal to correctly enable DMEM memory write for store instruction
-  - [ ] Modify the control circuit to generate the control signal, and the main circuit to use the modified control circuit
+- [X] store
+  - [X] To store rd data into memory, it has to be connected to the write port of DMEM
+  - [X] Provide appropriate control signal to correctly enable DMEM memory write for store instruction
+  - [X] Modify the control circuit to generate the control signal, and the main circuit to use the modified control circuit
 - [ ] Test
-  - [ ] Store some data to DMEM using the store instruction and see the contents of DMEM to check if it is there
-  - [ ] Load data from the same location into a register (choose form among the first 5 registers in regfile)  
+  - [X] Store some data to DMEM using the store instruction and see the contents of DMEM to check if it is there
+  - [X] Load data from the same location into a register (choose form among the first 5 registers in regfile)  
         *Checking register values: Under the 'Simulate' menu you will find "Timing diagram". Open that and click on the 'Add or remove signals' button. Expand "REGFILE" and select r1...r5 (whichever register you stored to). Now when you simulate, you can directly see the value of the registers at each time step.
-  - [ ] **Commit and push to Github with message "store instruction"**
+  - [X] **Commit and push to Github with message "store instruction"**
 2. Add support for branch and call instructions
 - [ ] We will only implement the _beq_ instruction in a slightly simplified format:  
       Use only the last 18 bits as the offset (same as for load and store). That way you do not need to modify the immediate generation circuit.
