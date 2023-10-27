@@ -936,17 +936,12 @@
       <a name="addrWidth" val="10"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 10 8
-4*ff 60 44 0 0 6f 8 0
-0 ae 8 0 0 e0 44 0
-0 45 84 0 0 30 0 2
-0 60 44 0 0 60 84 0
-0 45 c4 0 0 30 0 2
-0 60 44 0 0 60 84 0
-0 65 84 1 0 30 0 fe
-ff 60 44 0 0 33 0 4
-0 60 84 0 0 60 44 0
-0 60 84 0 0 60 44 2
-0 60 c4 1 0 14
+60 44 0 0 a0 84 0 0
+c0 84 0 0 e5 4c 1 0
+30 0 2 0 20 d1 ff ff
+33 0 3 0 6e 15 0 0
+1f 0 0 0 2f 15 0 0
+14
 </a>
       <a name="line" val="quad"/>
     </comp>
@@ -3741,7 +3736,7 @@ ff 60 44 0 0 33 0 4
       <a name="value" val="0x0"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(240,520)" name="Constant">
+    <comp lib="0" loc="(240,510)" name="Constant">
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(280,590)" name="Tunnel">
@@ -4057,15 +4052,15 @@ ff 60 44 0 0 33 0 4
       <a name="halign" val="left"/>
       <a name="text" val="ALU Operation select (ALUSel)"/>
     </comp>
-    <comp lib="7" loc="(1187,598)" name="Text">
+    <comp lib="7" loc="(1185,595)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="HALT Sel"/>
     </comp>
-    <comp lib="7" loc="(1214,408)" name="Text">
+    <comp lib="7" loc="(1210,405)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="CALL PC+4 Write enable"/>
     </comp>
-    <comp lib="7" loc="(1214,498)" name="Text">
+    <comp lib="7" loc="(1210,495)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="helps to select PC when ret"/>
     </comp>
@@ -4102,7 +4097,7 @@ ff 60 44 0 0 33 0 4
       <a name="font" val="SansSerif plain 20"/>
       <a name="text" val="Flag writeback enable"/>
     </comp>
-    <comp lib="7" loc="(925,586)" name="Text">
+    <comp lib="7" loc="(925,585)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Selects between PC+4 and PC+imm"/>
     </comp>
@@ -4145,7 +4140,7 @@ ff 60 44 0 0 33 0 4
     <wire from="(150,570)" to="(170,570)"/>
     <wire from="(150,590)" to="(170,590)"/>
     <wire from="(240,500)" to="(290,500)"/>
-    <wire from="(240,520)" to="(290,520)"/>
+    <wire from="(240,510)" to="(290,510)"/>
     <wire from="(240,570)" to="(290,570)"/>
     <wire from="(280,590)" to="(290,590)"/>
     <wire from="(290,580)" to="(290,590)"/>

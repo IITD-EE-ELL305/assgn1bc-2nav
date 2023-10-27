@@ -83,17 +83,17 @@ This will make the later part of this assignment easier for you.
 - [X] With the _halt_ instruction, the _PC_ stops incrementing. Do you need hardware modification?
 - [X] Add appropriate control signals
 - [X] **Commit and push to Github with message "halt and nop instruction"**
-- [ ] Write a small test program for all your instructions:
-  - [ ] Load two numbers into r1 and r2
-  - [ ] Add the two numbers and store result in r3
-  - [ ] Compare that with your 'manual' addition (supplied as an _imm_ to _cmp__
-  - [ ] If result is correct write 0x0 to r4 and skip next instruction; else branch to the next instruction and write 0xFFFFFFFF (all 1s) to r4
-  - [ ] Call a new function that stores the value from r4 to the data memory
-  - [ ] Return from the call
-  - [ ] Load value from data memory to r5
-  - [ ] Halt the CPU
-  - [ ] Check values of all relevant registers to ensure that the CPU is working as expected
-- [ ] **Commit and push to Github with message "assignment 1b final" only once you are fully sure and do not make edits after this**
+- [X] Write a small test program for all your instructions:
+  - [X] Load two numbers into r1 and r2
+  - [X] Add the two numbers and store result in r3
+  - [X] Compare that with your 'manual' addition (supplied as an _imm_ to _cmp__
+  - [X] If result is correct write 0x0 to r4 and skip next instruction; else branch to the next instruction and write 0xFFFFFFFF (all 1s) to r4
+  - [X] Call a new function that stores the value from r4 to the data memory
+  - [X] Return from the call
+  - [X] Load value from data memory to r5
+  - [X] Halt the CPU
+  - [X] Check values of all relevant registers to ensure that the CPU is working as expected
+- [X] **Commit and push to Github with message "assignment 1b final" only once you are fully sure and do not make edits after this**
      
   **End of assignment 1b. Due date: 28/10/2023**
 
