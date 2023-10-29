@@ -101,12 +101,12 @@ This will make the later part of this assignment easier for you.
 
 4. Implementing a ROM based controller  
    In this part, you will implement a ROM based controller instead of the combinational controller from previous assignments
-- [ ] Copy the "Connections to control unit" box fully from CTRL_COMBI to CTRL_ROM. These are just the input and output pins that appear on the device when you add it to the main circuit.
-- [ ] Add a ROM memory to the CTRL_ROM circuit
-- [ ] The address length of the ROM will be same as total number of input bits to the control circuit
-- [ ] The data length of ROM will be the total number of output bits from the control unit (rounded to a full byte; ignoring the extra bits you needed to add for rounding)
-- [ ] For each instruction in the list above, write down the control word values, encode them into little-endien hex and add it at the correct ROM address
-- [ ] Test your previous program without any modifications. It should work.
+- [X] Copy the "Connections to control unit" box fully from CTRL_COMBI to CTRL_ROM. These are just the input and output pins that appear on the device when you add it to the main circuit.
+- [X] Add a ROM memory to the CTRL_ROM circuit
+- [X] The address length of the ROM will be same as total number of input bits to the control circuit
+- [X] The data length of ROM will be the total number of output bits from the control unit (rounded to a full byte; ignoring the extra bits you needed to add for rounding)
+- [X] For each instruction in the list above, write down the control word values, encode them into little-endien hex and add it at the correct ROM address
+- [X] Test your previous program without any modifications. It should work.
 - [ ] **Commit and push to Github with message "ROM controller"**
 - [ ] Now we will see how easy it is to add new instructions to the ROM based controller:
   - [ ] Add instructions for and, or by simply generating the control word and putting it into the ROM
