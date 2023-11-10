@@ -107,13 +107,13 @@ This will make the later part of this assignment easier for you.
 - [X] The data length of ROM will be the total number of output bits from the control unit (rounded to a full byte; ignoring the extra bits you needed to add for rounding)
 - [X] For each instruction in the list above, write down the control word values, encode them into little-endien hex and add it at the correct ROM address
 - [X] Test your previous program without any modifications. It should work.
-- [ ] **Commit and push to Github with message "ROM controller"**
-- [ ] Now we will see how easy it is to add new instructions to the ROM based controller:
-  - [ ] Add instructions for and, or by simply generating the control word and putting it into the ROM
-  - [ ] Think of other instructions you can implement without hardware modifications!
+- [X] **Commit and push to Github with message "ROM controller"**
+- [X] Now we will see how easy it is to add new instructions to the ROM based controller:
+  - [X] Add instructions for and, or by simply generating the control word and putting it into the ROM
+  - [X] Think of other instructions you can implement without hardware modifications!
 5. Adding input and output devices
-- [ ] The MMAPPED_IO circuit component contains a keyboard and TTY (text terminal) that you will use, so add it to the circuit
-- [ ] Connect the Address, Data In and Data Out busses appropriately
+- [X] The MMAPPED_IO circuit component contains a keyboard and TTY (text terminal) that you will use, so add it to the circuit
+- [X] Connect the Address, Data In and Data Out busses appropriately
       Functioning of the devices:
       Both devices have a control register and data register; and the keyboard has a status register also. The details are as follows:
       - Keyboard status register address: 0x00000400 (only bit 0 of the status register is useful; indicating the availability of new data)
@@ -121,11 +121,11 @@ This will make the later part of this assignment easier for you.
       - Keyboard data register: 0x00000408 (lowest 7 bits encode character in ASCII format)
       - TTY control register: 0x0x00000804 (1 on bit 0 clears the screen; all other bits are unassigned)
       - TTY data register: 0x00000808 (accepts 7 bit ASCII data; all higher bits are ignored)
-- [ ] Test
-  - [ ] Clear the keyboard buffer
-  - [ ] In a for loop, wait for a new character; read it when it becomes available from keyboard and print it out to the TTY, for 10 iterations
-  - [ ] Clear the display
-  - [ ] **Commit and push to Github with message "added mmapped io"**
+- [X] Test
+  - [X] Clear the keyboard buffer
+  - [X] In a for loop, wait for a new character; read it when it becomes available from keyboard and print it out to the TTY, for 10 iterations
+  - [X] Clear the display
+  - [X] **Commit and push to Github with message "added mmapped io"**
 
 End of assignment 1c. Congratulations! You now have a very fancy CPU that can do most things you may want to!
 **Due date: 4/11/2023**
