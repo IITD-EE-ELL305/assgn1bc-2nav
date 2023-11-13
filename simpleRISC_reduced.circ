@@ -1076,12 +1076,13 @@
       <a name="addrWidth" val="10"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 10 8
-6e 4 0 1 66 44 0 0
-45 4 0 0 30 0 fd ff
-6e 0 2 1 6f 0 2 2
-33 0 3 0 6e 15 0 0
-1f 0 0 0 2f 15 0 0
-14
+a5 88 2 0 30 0 4 0
+33 0 e 0 a0 48 0 0
+33 0 fc ff e0 4c 0 0
+ef 0 1 2 36*0 6e 0 0
+1 66 44 0 0 45 4 0
+0 30 0 fd ff 6e 0 2
+1 6f 0 2 2 14
 </a>
       <a name="line" val="quad"/>
     </comp>
@@ -5011,6 +5012,11 @@ c400 8600 8600 c600 c600 26*0 c100 c100
       <a name="incoming" val="32"/>
       <a name="spacing" val="2"/>
     </comp>
+    <comp lib="0" loc="(780,240)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="READ_EN"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(890,320)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CTRL_ADD"/>
@@ -5049,6 +5055,10 @@ c400 8600 8600 c600 c600 26*0 c100 c100
     <comp lib="4" loc="(540,160)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(780,150)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="7"/>
     </comp>
     <comp lib="5" loc="(1070,190)" name="TTY">
       <a name="bg" val="#000000b0"/>
@@ -5095,7 +5105,16 @@ c400 8600 8600 c600 c600 26*0 c100 c100
     <wire from="(710,350)" to="(710,360)"/>
     <wire from="(720,240)" to="(720,320)"/>
     <wire from="(740,90)" to="(740,170)"/>
-    <wire from="(750,90)" to="(750,220)"/>
+    <wire from="(750,180)" to="(780,180)"/>
+    <wire from="(750,220)" to="(760,220)"/>
+    <wire from="(750,90)" to="(750,180)"/>
+    <wire from="(760,220)" to="(760,280)"/>
+    <wire from="(760,280)" to="(870,280)"/>
+    <wire from="(780,180)" to="(790,180)"/>
+    <wire from="(780,200)" to="(780,220)"/>
+    <wire from="(780,220)" to="(780,240)"/>
+    <wire from="(840,180)" to="(870,180)"/>
+    <wire from="(870,180)" to="(870,280)"/>
     <wire from="(890,320)" to="(900,320)"/>
     <wire from="(890,360)" to="(900,360)"/>
     <wire from="(950,340)" to="(1010,340)"/>
