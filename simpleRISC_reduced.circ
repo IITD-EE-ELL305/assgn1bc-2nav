@@ -167,7 +167,7 @@
       <a name="label" val="FlWEn"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
-    <comp lib="0" loc="(1490,370)" name="Tunnel">
+    <comp lib="0" loc="(1440,370)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -178,14 +178,19 @@
       <a name="labelfont" val="SansSerif bold 11"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(1560,600)" name="Tunnel">
+    <comp lib="0" loc="(1590,650)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="IsEq"/>
+      <a name="label" val="IsGT"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(160,600)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="PCSel"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
+    <comp lib="0" loc="(1610,600)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="IsEq"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(1650,600)" name="Tunnel">
@@ -413,6 +418,12 @@
       <a name="label" val="HALTSel"/>
       <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
+    <comp lib="0" loc="(650,180)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="rs2"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+      <a name="width" val="4"/>
+    </comp>
     <comp lib="0" loc="(670,600)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="OP"/>
@@ -422,12 +433,6 @@
     <comp lib="0" loc="(680,200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="rd"/>
-      <a name="labelfont" val="SansSerif bold 11"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(690,180)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="rs2"/>
       <a name="labelfont" val="SansSerif bold 11"/>
       <a name="width" val="4"/>
     </comp>
@@ -557,9 +562,14 @@
     <comp lib="3" loc="(380,170)" name="Adder">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(1490,300)" name="Register">
+    <comp lib="4" loc="(1530,300)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="IsEq"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="4" loc="(1530,440)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="IsGT"/>
       <a name="width" val="1"/>
     </comp>
     <comp lib="4" loc="(240,190)" name="Register">
@@ -641,24 +651,33 @@
     <wire from="(1310,1110)" to="(1460,1110)"/>
     <wire from="(1310,1170)" to="(1410,1170)"/>
     <wire from="(1310,1220)" to="(1460,1220)"/>
-    <wire from="(1360,350)" to="(1360,600)"/>
-    <wire from="(1360,350)" to="(1490,350)"/>
+    <wire from="(1360,350)" to="(1360,490)"/>
+    <wire from="(1360,350)" to="(1530,350)"/>
+    <wire from="(1360,490)" to="(1360,600)"/>
+    <wire from="(1360,490)" to="(1530,490)"/>
     <wire from="(1410,1060)" to="(1410,1100)"/>
     <wire from="(1410,1100)" to="(1460,1100)"/>
     <wire from="(1410,1120)" to="(1410,1170)"/>
     <wire from="(1410,1120)" to="(1460,1120)"/>
+    <wire from="(1440,370)" to="(1460,370)"/>
     <wire from="(1460,1000)" to="(1460,1090)"/>
     <wire from="(1460,1130)" to="(1460,1220)"/>
+    <wire from="(1460,370)" to="(1460,510)"/>
+    <wire from="(1460,370)" to="(1530,370)"/>
+    <wire from="(1460,510)" to="(1530,510)"/>
     <wire from="(1490,180)" to="(1530,180)"/>
-    <wire from="(1490,200)" to="(1490,330)"/>
+    <wire from="(1490,200)" to="(1530,200)"/>
+    <wire from="(1490,220)" to="(1490,470)"/>
+    <wire from="(1490,470)" to="(1530,470)"/>
     <wire from="(150,120)" to="(150,410)"/>
     <wire from="(150,120)" to="(690,120)"/>
     <wire from="(150,410)" to="(690,410)"/>
     <wire from="(1530,1110)" to="(1640,1110)"/>
     <wire from="(1530,160)" to="(1530,180)"/>
     <wire from="(1530,180)" to="(1670,180)"/>
-    <wire from="(1550,330)" to="(1560,330)"/>
-    <wire from="(1560,330)" to="(1560,600)"/>
+    <wire from="(1530,200)" to="(1530,330)"/>
+    <wire from="(1590,330)" to="(1620,330)"/>
+    <wire from="(1590,470)" to="(1590,650)"/>
     <wire from="(160,140)" to="(160,180)"/>
     <wire from="(160,140)" to="(400,140)"/>
     <wire from="(160,180)" to="(180,180)"/>
@@ -668,6 +687,9 @@
     <wire from="(1610,120)" to="(1610,440)"/>
     <wire from="(1610,120)" to="(2000,120)"/>
     <wire from="(1610,440)" to="(2000,440)"/>
+    <wire from="(1610,590)" to="(1610,600)"/>
+    <wire from="(1610,590)" to="(1620,590)"/>
+    <wire from="(1620,330)" to="(1620,590)"/>
     <wire from="(1640,1110)" to="(1640,1360)"/>
     <wire from="(1640,1110)" to="(1940,1110)"/>
     <wire from="(1650,240)" to="(1650,600)"/>
@@ -770,11 +792,10 @@
     <wire from="(620,300)" to="(670,300)"/>
     <wire from="(640,1140)" to="(660,1140)"/>
     <wire from="(640,320)" to="(640,600)"/>
+    <wire from="(650,180)" to="(710,180)"/>
     <wire from="(670,300)" to="(670,600)"/>
     <wire from="(680,200)" to="(710,200)"/>
-    <wire from="(690,120)" to="(690,180)"/>
-    <wire from="(690,180)" to="(690,410)"/>
-    <wire from="(690,180)" to="(710,180)"/>
+    <wire from="(690,120)" to="(690,410)"/>
     <wire from="(700,120)" to="(1230,120)"/>
     <wire from="(700,120)" to="(700,440)"/>
     <wire from="(700,440)" to="(1230,440)"/>
@@ -3091,6 +3112,7 @@ ef 0 1 2 36*0 6e 0 0
       <circ-port dir="in" pin="480,260" x="50" y="100"/>
       <circ-port dir="out" pin="220,200" x="270" y="60"/>
       <circ-port dir="out" pin="220,230" x="270" y="80"/>
+      <circ-port dir="out" pin="220,260" x="50" y="90"/>
     </appear>
     <comp lib="0" loc="(220,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -3102,6 +3124,11 @@ ef 0 1 2 36*0 6e 0 0
     <comp lib="0" loc="(220,230)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="ALU_IS_EQ"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(220,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ALU_IS_GT"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(230,430)" name="Tunnel">
@@ -3184,6 +3211,10 @@ ef 0 1 2 36*0 6e 0 0
     <comp lib="0" loc="(240,230)" name="Tunnel">
       <a name="label" val="isEqual"/>
       <a name="labelfont" val="SansSerif bold 13"/>
+    </comp>
+    <comp lib="0" loc="(240,260)" name="Tunnel">
+      <a name="label" val="isGT"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
     </comp>
     <comp lib="0" loc="(330,660)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -3514,6 +3545,10 @@ ef 0 1 2 36*0 6e 0 0
       <a name="labelfont" val="SansSerif bold 11"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(980,510)" name="Tunnel">
+      <a name="label" val="isGT"/>
+      <a name="labelfont" val="SansSerif bold 11"/>
+    </comp>
     <comp lib="0" loc="(980,530)" name="Tunnel">
       <a name="label" val="isEqual"/>
       <a name="labelfont" val="SansSerif bold 11"/>
@@ -3593,6 +3628,7 @@ ef 0 1 2 36*0 6e 0 0
     <wire from="(1060,130)" to="(1060,680)"/>
     <wire from="(220,200)" to="(240,200)"/>
     <wire from="(220,230)" to="(240,230)"/>
+    <wire from="(220,260)" to="(240,260)"/>
     <wire from="(230,430)" to="(280,430)"/>
     <wire from="(230,450)" to="(270,450)"/>
     <wire from="(230,470)" to="(260,470)"/>
@@ -3707,12 +3743,14 @@ ef 0 1 2 36*0 6e 0 0
     <wire from="(960,180)" to="(980,180)"/>
     <wire from="(960,250)" to="(980,250)"/>
     <wire from="(960,390)" to="(980,390)"/>
+    <wire from="(960,520)" to="(980,520)"/>
     <wire from="(960,530)" to="(980,530)"/>
     <wire from="(970,320)" to="(970,350)"/>
     <wire from="(970,320)" to="(980,320)"/>
     <wire from="(970,460)" to="(970,490)"/>
     <wire from="(970,460)" to="(980,460)"/>
     <wire from="(970,600)" to="(990,600)"/>
+    <wire from="(980,510)" to="(980,520)"/>
   </circuit>
   <circuit name="CTRL_COMBI">
     <a name="appearance" val="logisim_evolution"/>
@@ -4619,11 +4657,11 @@ c400 8600 8600 c600 c600 26*0 c100 c100
 </a>
       <a name="dataWidth" val="16"/>
     </comp>
-    <comp lib="7" loc="(142,376)" name="Text">
+    <comp lib="7" loc="(140,375)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="text" val="Connections to control unit"/>
     </comp>
-    <comp lib="7" loc="(147,44)" name="Text">
+    <comp lib="7" loc="(145,40)" name="Text">
       <a name="font" val="SansSerif plain 20"/>
       <a name="text" val="This data goes to datapath"/>
     </comp>

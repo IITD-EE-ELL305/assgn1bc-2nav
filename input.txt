@@ -1,4 +1,6 @@
-add r1 r2 r3
-add r1 r2 1
 add r1 r1 1
-halt
+cmp r1 r1 0
+bgt 8
+add r1 r1 1
+add r1 r1 2
+add r1 r1 3

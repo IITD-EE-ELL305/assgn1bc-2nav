@@ -7,5 +7,5 @@ with open('Book1.csv', 'r') as f:
     # Skip the header row
     next(csv_reader)
     for row in csv_reader:
-        g.write(row[3] + ': ' + row[14] + '\n')
+        g.write(row[4] + ': ' + row[15] + '\n')
 g.close()
