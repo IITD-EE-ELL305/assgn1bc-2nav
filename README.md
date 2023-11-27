@@ -131,8 +131,8 @@ End of assignment 1c. Congratulations! You now have a very fancy CPU that can do
 **Due date: 4/11/2023**
 
 ## Optional
-- [ ] Add support for 'greater than' in comparison in addition to equal (the ALU and flags will need a small modification)
-- [ ] Write an assembler in python (convert assembly instructions to machine language)
+- [X] Add support for 'greater than' in comparison in addition to equal (the ALU and flags will need a small modification)
+- [X] Write an assembler in python (convert assembly instructions to machine language)
 - [ ] Write a program to read a string of characters up to a newline and print it out in reverse
 - [ ] Write a program to take in a string like `13 + 634`, `27 / 3`, identifies the correct operation and prints out the result.
 - [ ] What other fancy programs can you write for your CPU+Kbd+TTY with your assembler? If you have working solutions, share them with the class!
