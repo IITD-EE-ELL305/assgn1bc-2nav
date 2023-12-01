@@ -1,5 +1,8 @@
 # Design the microarchitecture for a SimpleRISC CPU that implements a subset of instructions that we studied in the class.
 
+## Fancy Update 1
+- Added small python codes to directly modify the '''.circ''' file to add the instructions/data to the ROM, using previousle made python assembler.
+
 ## Here are the specifications for the ISA
 
 - 32 bit instructions and data
