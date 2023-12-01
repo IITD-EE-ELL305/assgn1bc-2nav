@@ -15,7 +15,7 @@ def update_imem_rom(imem_path = 'output'):
     l1 = data_element.text.split('\n')[0] # gets addr/data width
     # print(l1)
 
-    with open('imem_path', 'r') as f:
+    with open(imem_path, 'r') as f:
         data = f.readlines()
     data = data[1:]
     data = [i.split(':')[1].strip(' ') for i in data]
@@ -28,6 +28,6 @@ def update_imem_rom(imem_path = 'output'):
     tree.write('simpleRISC_reduced.circ')
 
 
-
-# update_imem_rom('output')
+asm.assemble()
+update_imem_rom('output')
     
