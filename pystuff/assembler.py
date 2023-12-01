@@ -56,8 +56,8 @@ def inst_to_bin(inst):
     return bincode
 
 def assemble():
-    f = open('input.txt', 'r')
-    g = open('output', 'w')
+    f = open('pystuff/input.txt', 'r')
+    g = open('pystuff/output', 'w')
     g.write('v3.0 hex words addressed\n')
     count = 0
     st = f.readlines()
