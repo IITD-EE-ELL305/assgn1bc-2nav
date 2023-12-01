@@ -55,14 +55,15 @@ def inst_to_bin(inst):
         bincode += i + opcode
     return bincode
 
-f = open('input.txt', 'r')
-g = open('output', 'w')
-g.write('v3.0 hex words addressed\n')
-count = 0
-st = f.readlines()
-sz = len(st)
-for line in st:
-    g.write(hex(count)[2 : ].zfill(math.ceil(math.log(sz,4))) + ': ' + encode(bin_to_hex(inst_to_bin(line))) + '\n')
-    count += 4
-f.close()
-g.close()
+def assemble():
+    f = open('input.txt', 'r')
+    g = open('output', 'w')
+    g.write('v3.0 hex words addressed\n')
+    count = 0
+    st = f.readlines()
+    sz = len(st)
+    for line in st:
+        g.write(hex(count)[2 : ].zfill(math.ceil(math.log(sz,4))) + ': ' + encode(bin_to_hex(inst_to_bin(line))) + '\n')
+        count += 4
+    f.close()
+    g.close()
