@@ -4,7 +4,7 @@ def write_rom():
     addr_width = 8
     g = open('rom_stuff', 'w')
     g.write('v3.0 hex words addressed\n')
-    with open('Book1.csv', 'r') as f:
+    with open('pystuff/Book1.csv', 'r') as f:
         csv_reader = csv.reader(f, delimiter=',')
         # Skip the header row
         header = next(csv_reader)
