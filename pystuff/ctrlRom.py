@@ -1,5 +1,7 @@
 '''Author : Navneet Raj'''
 import csv
+
+
 def write_rom():
     addr_width = 8
     g = open('rom_stuff', 'w')
@@ -24,6 +26,8 @@ def write_rom():
         # for row in sortedlist:
         #     g.write(row[4] + ': ' + row[15] + '\n')
     g.close()
+
+
 write_rom()
 '''with open('Book2.csv', 'w', newline='') as f:
     writer = csv.writer(f)
