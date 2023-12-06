@@ -3,6 +3,9 @@
 ## Fancy Update 1
 - Added small python codes to directly modify the '''.circ''' file to add the instructions/data to the ROM, using previousle made python assembler.
 
+## Fancy Update 2
+- Added small python codes to create new splitters, useful for big splitters. Read more [here](logistuff/README.md).
+
 ## Here are the specifications for the ISA
 
 - 32 bit instructions and data
