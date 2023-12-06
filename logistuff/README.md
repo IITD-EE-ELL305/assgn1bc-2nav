@@ -6,7 +6,7 @@ While doing this assignment, especially when creating the splitter for ```CTRL_R
 So for the case which is usual, I created a splitter which takes in the number of bits to be split and the splits defined in a list. This creates a new logisim circuit in your project, given path of the project, and creates the splitter in the new circuit.
 
 ## Usage
-1. Modify the variables in the ```main()``` function in [```splitter.py``](logistuff/splitter.py)` to suit your needs.
+1. Modify the variables in the ```main()``` function in [```splitter.py```](logistuff/splitter.py) to suit your needs.
     - ```path``` is the path to your logisim project
     - ```incoming_bits``` is the number of bits to be split
     - ```split_list``` is a list of the splits to be made
@@ -15,7 +15,7 @@ So for the case which is usual, I created a splitter which takes in the number o
 3. Comment `line 14` (add_splitter(path, incoming_bits, split_list)) and uncomment `line 24` (# delete_circuit(path)) to delete the newly created circuit.
 
 ## Example
-Let's take the case of our CTRL_ROM, we have 16 bits to be split into 3,1,1,1,1,1,1,4,1,1,1 bit splits. So we define the following variables in the ```main()``` function in [```splitter.py``](logistuff/splitter.py)
+Let's take the case of our CTRL_ROM, we have 16 bits to be split into 3,1,1,1,1,1,1,4,1,1,1 bit splits. So we define the following variables in the ```main()``` function in [```splitter.py```](logistuff/splitter.py)
 path = `simpleRISC_reduced.circ`, `incoming_bits = 16`, `split_list = [3,1,1,1,1,1,1,4,1,1,1]`
 
 Then we run the script, and we get a new circuit in our project with the splitter. Copy paste the splitter into our CTRL_ROM circuit, and we're done!
